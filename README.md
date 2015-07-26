@@ -28,7 +28,6 @@ grunt.initConfig({
             config: {
                 directory: './config/db/seeds',
                 seeds: './config/db/seed',
-                tableName: 'knex_migrations',
                 database: {
                     client: 'pg',
                     connection: {
