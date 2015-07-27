@@ -10,7 +10,12 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 ```shell
 npm install grunt-knexseed --save-dev
 ```
-
+#### Note:
+You should install appropriate driver for your DB.
+If you are using postgres:
+```shell
+npm install pg
+```
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
@@ -26,8 +31,7 @@ In your project's Gruntfile, add a section named `knexseed` to the data object p
 grunt.initConfig({
   knexseed: {
             config: {
-                directory: './config/db/seeds',
-                seeds: './config/db/seed',
+                 seeds: './config/db/seed',
                 database: {
                     client: 'pg',
                     connection: {
@@ -38,7 +42,7 @@ grunt.initConfig({
                     }
                 }
             }
-        },
+        }
 });
 ```
 
