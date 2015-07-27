@@ -31,7 +31,7 @@ In your project's Gruntfile, add a section named `knexseed` to the data object p
 grunt.initConfig({
   knexseed: {
             config: {
-                 seeds: './config/db/seed',
+                directory: './config/db/seed',
                 database: {
                     client: 'pg',
                     connection: {
